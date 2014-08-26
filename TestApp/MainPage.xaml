@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="TestApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TestApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Hub Header="RiverWatch">
+            <HubSection Header="Submit Report">
+                <DataTemplate>
+                    <Grid>
+
+                        <Button x:Name="CameraButton" Content="Camera" HorizontalAlignment="Left" Margin="20,60,0,0" VerticalAlignment="Top" Click="CameraButton_Click"/>
+                        <Button x:Name="GPSButton" Content="GPS" HorizontalAlignment="Left" Margin="20,120,0,0" VerticalAlignment="Top" Click="GPSButton_Click"/>
+                        <Button x:Name="DescriptionButton" Content="Description" HorizontalAlignment="Left" Margin="20,180,0,0" VerticalAlignment="Top" Click="DescriptionButton_Click"/>
+                        <Button x:Name="TestButton" Content="Test" HorizontalAlignment="Left" Margin="20,240,0,0" VerticalAlignment="Top" Click="TestButton_Click"/>
+                    </Grid>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Header="WaterWand">
+                <DataTemplate>
+                    <Grid>
+                        <TextBlock>Work In Progress</TextBlock>
+                    </Grid>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+        <TextBox x:Name="apple" HorizontalAlignment="Left" Margin="0,522,0,0" TextWrapping="Wrap" Text="DynamicDebug" VerticalAlignment="Top" Height="118" Width="400" IsReadOnly="True" />
+
+
+
+    </Grid>
+</Page>
